@@ -25,7 +25,7 @@ resource "aws_instance" "ec2" {
         inline = [
         "git clone https://github.com/chitramanognya/roboshop-shell",
         "cd roboshop-shell"
-        " sudo bash ${var.component}.sh"
+        "sudo bash ${var.component}.sh"
         
         ]
     }
@@ -33,7 +33,7 @@ resource "aws_instance" "ec2" {
 }
 
 resource "aws_security_group" "sg" {
-  name        = "${var.component}-${var.env)-sg"
+  Name        = "${var.component}-${var.env)-sg"
   description = "Allow TLS inbound traffic"
   
 
@@ -54,13 +54,8 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = ""${var.component}-${var.env)-sg""
+    Name = "${var.component}-${var.env)-sg"
   }
-}
-
-
-output "sg_id" {
-  value = 
 }
 
 
