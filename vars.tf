@@ -55,7 +55,7 @@ variable "instances" {
         
         
         dispatch = {
-            name = "dispatch"
+            name = "payment"
             type = "t3.micro"
             
         }
