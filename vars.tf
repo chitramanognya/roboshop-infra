@@ -56,7 +56,7 @@ variable "instances" {
         
         
         
-        dispatch = {
+        payment = {
             name = "payment"
             type = "t3.micro"
             password = "roboshop123"
