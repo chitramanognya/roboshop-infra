@@ -105,6 +105,7 @@ resource "aws_iam_role" "role" {
         }
     ]
 })
+}
 
 resource "aws_iam_instance_profile" "test_profile" {
   name = "${var.env}-${var.component}-role"
