@@ -14,7 +14,7 @@ parameters = [
   { name = "dev.payment.user_host", value = "user-dev.learndevopsb71shop.site", type = "String" },
   { name = "dev.payment.user_port", value = "8080", type = "String" },
   { name = "dev.payment.ampq_host", value = "rabbitmq-dev.learndevopsb71shop.site", type = "String" },
-  { name = "dev.catalogue.mongo_host", value = "true", type = "String" },
+  { name = "dev.catalogue.mongo", value = "true", type = "String" },
   { name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.learndevopsb71shop.site:27017/users", type = "String" },
   { name = "dev.cart.redis_host", value = "redis-dev.learndevopsb71shop.site", type = "String" },
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.learndevopsb71shop.site", type = "String" },
