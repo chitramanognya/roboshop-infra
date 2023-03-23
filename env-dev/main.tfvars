@@ -50,4 +50,4 @@ instances = {
     }  
 } 
 
-//env = "dev"
+env = "dev"
