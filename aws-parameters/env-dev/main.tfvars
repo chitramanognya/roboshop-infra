@@ -21,5 +21,9 @@ parameters = [
   { name = "dev.cart.catalogue_port", value = "8080", type = "String" }
 ]
 
+secrets = [
+  { name = "test", value = "8080", type = "SecureString" }
+
+]
 
 
