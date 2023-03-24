@@ -21,9 +21,18 @@ parameters = [
   { name = "dev.cart.catalogue_port", value = "8080", type = "String" }
 ]
 
+### this is not practised in organisations,souldnot keep passwords in git repos
 secrets = [
-  { name = "test", value = "8080", type = "SecureString" }
-
+  { name = "dev.mysql.password", value = "RoboShop@1", type = "SecureString" }
+  {name = "dev.payment.amqp_user", value = "roboshop", type = "SecureString" },
+  {name = "dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
+  {name = "dev.rabbitmq.amqp_user", value = "roboshop", type = "SecureString" },
+  {name = "dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+  
+  
+  
+  
+  
 ]
 
 
