@@ -2,6 +2,7 @@ instances = {
   frontend = {
     name = "frontend"
     type = "t3.micro"
+    monitor = true
     }
     
     mongodb = {
@@ -12,6 +13,7 @@ instances = {
   catalogue = {
     name = "catalogue"
     type = "t3.micro"
+    monitor = true
     }
     
   redis = {
@@ -22,11 +24,13 @@ instances = {
   user = {
     name = "user"
     type = "t3.micro"
+    monitor = true
     }  
   
   cart = {
     name = "cart"
     type = "t3.micro"
+    monitor = true
     }
     
   mysql = {
@@ -37,6 +41,7 @@ instances = {
   shipping = {
     name = "shipping"
     type = "t3.micro"
+    monitor = true
     }
     
   rabbitmq = {
@@ -47,6 +52,7 @@ instances = {
   payment = {
     name = "payment"
     type = "t3.micro"
+    monitor = true
     }  
 } 
 
