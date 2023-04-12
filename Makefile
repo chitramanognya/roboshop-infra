@@ -1,4 +1,4 @@
-git: 
+git:  
 	git pull
 	rm -rf .terraform
 	
