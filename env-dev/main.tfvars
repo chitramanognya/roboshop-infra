@@ -41,7 +41,7 @@ vpc = {
       }  
       
       app-az2 = {
-      name = "app-az1"
+      name = "app-az2"
       cidr_block = "10.0.5.0/24"
       availability_zone = "us-east-1b"
       } 
@@ -53,7 +53,7 @@ vpc = {
       } 
       
       db-az2 = {
-      name = "app-az1"
+      name = "app-az2"
       cidr_block = "10.0.7.0/24"
       availability_zone = "us-east-1b"
       }
