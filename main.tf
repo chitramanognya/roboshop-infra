@@ -11,16 +11,16 @@ module "vpc" {
     
 }
 
-module "docdb" {
-  source = "git::https://github.com/chitramanognya/tf-module-docdb.git"
-  env = var.env
-  tags = var.tags
+//module "docdb" {
+  //source = "git::https://github.com/chitramanognya/tf-module-docdb.git"
+  //env = var.env
+  //tags = var.tags
  
-  for_each = var.docdb
-  engine = each.value["engine"] 
+  //for_each = var.docdb
+  //engine = each.value["engine"] 
   
     
-}
+//}
 
 
 ##output "vpc" {
