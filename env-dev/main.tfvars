@@ -67,6 +67,7 @@ docdb = {
   main = {
     engine = "docdb"
     engine_version = "4.0.0"
+    skip_final_snapshot = true
     backup_retention_period = 2
     preferred_backup_window = "07:00-09:00"
     }
