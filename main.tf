@@ -40,7 +40,7 @@ module "rds" {
   engine = each.value["engine"] 
   engine_version = each.value["engine_version"]
   backup_retention_period = each.value["backup_retention_period"]
-  preferred_backup_window = each.value["preffered_backup_window"]
+  preferred_backup_window = each.value["preferred_backup_window"]
   
 }
 
