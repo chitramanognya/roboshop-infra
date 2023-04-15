@@ -1,4 +1,4 @@
-module "vpc" {
+/*module "vpc" {
   source = "git::https://github.com/chitramanognya/tf-module-vpc.git"
   env = var.env
   tags = var.tags
@@ -74,7 +74,7 @@ module "rabbitmq" {
  
  
   
-}
+}*/
 
 module "alb" {
   source = "git::https://github.com/chitramanognya/tf-module-alb.git"
