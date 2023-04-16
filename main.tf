@@ -94,6 +94,7 @@ module "alb" {
     env = var.env
     tags = var.tags
     
+    //vpc_id = module.vpc.vpc_id
     
     for_each = var.apps
     component = each.value["component"]
@@ -102,6 +103,10 @@ module "alb" {
     max_size           = each.value["max_size"]
     min_size           = each.value["min_size"]
     subnets = lookup(local.subnet_ids, each.value["subnet_name"], null)
+  }
+  
+  output "vpc" {
+    value = module.vpc
   }
 
 
