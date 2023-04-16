@@ -134,6 +134,8 @@ docdb = {
       max_size           = 4
       min_size           = 1
       subnet_name = "app"
+      port = 8080
+      allow_app_to = "app"
     }
     
     cart = {
@@ -143,6 +145,8 @@ docdb = {
       max_size           = 4
       min_size           = 1
       subnet_name = "app"
+      port = 8080
+      allow_app_to = "app"
     }
     
     
@@ -153,6 +157,8 @@ docdb = {
       max_size           = 4
       min_size           = 1
       subnet_name = "app"
+      port = 8080
+      allow_app_to = "app"
     
     }
     shipping = {
@@ -162,6 +168,8 @@ docdb = {
       max_size           = 4
       min_size           = 1
       subnet_name = "app"
+      port = 8080
+      allow_app_to = "app"
     
   }
   
@@ -172,6 +180,8 @@ docdb = {
       max_size           = 4
       min_size           = 1
       subnet_name = "app"
+      port = 8080
+      allow_app_to = "app"
     
   }
   frontend = {
@@ -181,6 +191,8 @@ docdb = {
       max_size           = 4
       min_size           = 1
       subnet_name = "web"
+      port = 80
+      allow_app_to = "public"
     
   }
   
