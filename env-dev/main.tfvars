@@ -138,6 +138,7 @@ docdb = {
       port = 8080
       allow_app_to = "app"
       alb = "private"
+      listener_priority = 10
     }
     
     cart = {
@@ -150,6 +151,7 @@ docdb = {
       port = 8080
       allow_app_to = "app"
       alb = "private"
+      listener_priority = 11
     }
     
     
@@ -163,6 +165,7 @@ docdb = {
       port = 8080
       allow_app_to = "app"
       alb = "private"
+      listener_priority = 12
     }
     shipping = {
       component = "shipping"
@@ -174,6 +177,7 @@ docdb = {
       port = 8080
       allow_app_to = "app"
       alb = "private"
+      listener_priority = 13
   }
   
   payment = {
@@ -186,6 +190,7 @@ docdb = {
       port = 8080
       allow_app_to = "app"
       alb = "private"
+      listener_priority = 14
   }
   frontend = {
       component = "frontend"
@@ -197,6 +202,7 @@ docdb = {
       port = 80
       allow_app_to = "public"
       alb = "public"
+      listener_priority = 10
   }
   
   }
