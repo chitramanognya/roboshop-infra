@@ -1,5 +1,6 @@
 env = "dev"
 bastion_cidr = [ "172.31.8.18/32" ]
+dns_domain = "learndevopsb71shop.site"
 
 
 vpc = {
@@ -136,6 +137,7 @@ docdb = {
       subnet_name = "app"
       port = 8080
       allow_app_to = "app"
+      alb = "private"
     }
     
     cart = {
@@ -147,6 +149,7 @@ docdb = {
       subnet_name = "app"
       port = 8080
       allow_app_to = "app"
+      alb = "private"
     }
     
     
@@ -159,7 +162,7 @@ docdb = {
       subnet_name = "app"
       port = 8080
       allow_app_to = "app"
-    
+      alb = "private"
     }
     shipping = {
       component = "shipping"
@@ -170,7 +173,7 @@ docdb = {
       subnet_name = "app"
       port = 8080
       allow_app_to = "app"
-    
+      alb = "private"
   }
   
   payment = {
@@ -182,7 +185,7 @@ docdb = {
       subnet_name = "app"
       port = 8080
       allow_app_to = "app"
-    
+      alb = "private"
   }
   frontend = {
       component = "frontend"
@@ -193,7 +196,7 @@ docdb = {
       subnet_name = "web"
       port = 80
       allow_app_to = "public"
-    
+      alb = "public"
   }
   
   }
