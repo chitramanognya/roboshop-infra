@@ -95,14 +95,14 @@ docdb = {
     engine = "redis"
     engine_version = "6.x"
     num_cache_nodes = 1
-    node_type = "cache.t3.micro"
+    node_type = "cache.t3.small"
     
     }
   }
   
   rabbitmq = {
     main = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     
     
     }
@@ -130,7 +130,7 @@ docdb = {
   apps = {
     catalogue = {
       component = "catalogue"
-      instance_type = "t3.micro"
+      instance_type = "t3.small"
       desired_capacity   = 1
       max_size           = 4
       min_size           = 1
@@ -143,7 +143,7 @@ docdb = {
     
     cart = {
       component = "cart"
-      instance_type = "t3.micro"
+      instance_type = "t3.small"
       desired_capacity   = 1
       max_size           = 4
       min_size           = 1
@@ -157,7 +157,7 @@ docdb = {
     
     user = {
       component = "user"
-      instance_type = "t3.micro"
+      instance_type = "t3.small"
       desired_capacity   = 1
       max_size           = 4
       min_size           = 1
@@ -169,7 +169,7 @@ docdb = {
     }
     shipping = {
       component = "shipping"
-      instance_type = "t3.micro"
+      instance_type = "t3.small"
       desired_capacity   = 1
       max_size           = 4
       min_size           = 1
@@ -182,7 +182,7 @@ docdb = {
   
   payment = {
       component = "payment"
-      instance_type = "t3.micro"
+      instance_type = "t3.small"
       desired_capacity   = 1
       max_size           = 4
       min_size           = 1
@@ -194,7 +194,7 @@ docdb = {
   }
   frontend = {
       component = "frontend"
-      instance_type = "t3.micro"
+      instance_type = "t3.small"
       desired_capacity   = 1
       max_size           = 4
       min_size           = 1
