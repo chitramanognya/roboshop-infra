@@ -140,6 +140,7 @@ docdb = {
       allow_app_to = "app"
       alb = "private"
       listener_priority = 10
+      parameters = ["docdb"]
     }
     
     cart = {
@@ -153,6 +154,7 @@ docdb = {
       allow_app_to = "app"
       alb = "private"
       listener_priority = 11
+      parameters = ["elasticache"]
     }
     
     
@@ -167,7 +169,9 @@ docdb = {
       allow_app_to = "app"
       alb = "private"
       listener_priority = 12
+      parameters = ["docdb", "elasticache"]
     }
+    
     shipping = {
       component = "shipping"
       instance_type = "t3.small"
@@ -179,6 +183,7 @@ docdb = {
       allow_app_to = "app"
       alb = "private"
       listener_priority = 13
+      parameters = []
   }
   
   payment = {
@@ -192,6 +197,7 @@ docdb = {
       allow_app_to = "app"
       alb = "private"
       listener_priority = 14
+      parameters = []
   }
   frontend = {
       component = "frontend"
@@ -204,6 +210,7 @@ docdb = {
       allow_app_to = "public"
       alb = "public"
       listener_priority = 10
+      parameters = []
   }
   
   }
