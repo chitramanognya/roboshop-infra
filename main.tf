@@ -54,6 +54,7 @@ module "elasticache" {
   env = var.env
   tags = var.tags
   
+  
   subnet_ids = local.db_subnet_ids
   vpc_id  = module.vpc["main"].vpc_id
   for_each = var.elasticache
@@ -61,7 +62,7 @@ module "elasticache" {
   engine_version = each.value["engine_version"]
   num_cache_nodes = each.value["num_cache_nodes"]  
   node_type = each.value["node_type"]
-  
+  allow_subnets = lookup(local.subnet_cidr, each.value["allow_subnets"], null)
 }
 
 module "rabbitmq" {
