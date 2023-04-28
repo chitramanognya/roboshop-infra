@@ -106,6 +106,7 @@ docdb = {
   rabbitmq = {
     main = {
     instance_type = "t3.small"
+    allow_subnets = "app"
     
     
     }
