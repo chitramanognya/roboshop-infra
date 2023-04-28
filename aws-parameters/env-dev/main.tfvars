@@ -7,7 +7,7 @@ parameters = [
   { name = "dev.user.mongo", value = "true", type = "String" },
   { name = "dev.user.redis_host", value = "redis-dev.learndevopsb71shop.site", type = "String" },
   { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.learndevopsb71shop.site:27017/catalogue", type = "String" },
-  { name = "dev.shipping.cart_endpoint", value = "cart-dev.learndevopsb71shop.site:8080", type = "String" },
+  { name = "dev.shipping.cart_endpoint", value = "cart-dev.learndevopsb71shop.site:80", type = "String" },
   { name = "dev.shipping.db_host", value = "mysql-dev.learndevopsb71shop.site", type = "String" },
   { name = "dev.payment.cart_host", value = "cart-dev.learndevopsb71shop.site", type = "String" },
   { name = "dev.payment.cart_port", value = "8080", type = "String" },
