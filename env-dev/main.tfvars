@@ -1,5 +1,6 @@
 env = "dev"
 bastion_cidr = [ "172.31.8.18/32" ]
+monitoring_nodes = [ "172.31.2.204/32" ]
 dns_domain = "learndevopsb71shop.site"
 
 
