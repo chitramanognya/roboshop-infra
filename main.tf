@@ -127,7 +127,7 @@ module "alb" {
     listener_arn = lookup(lookup(lookup(module.alb, each.value["alb"], null), "listener", null), "arn", null)
   }
   
-  output "elasticache" {
+  output "alb" {
     value = module.elasticache
   }
 
