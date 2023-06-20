@@ -141,7 +141,7 @@ module "alb" {
   instance_type = "t3.medium"
   
   wait_for_fulfillment = true
-  vpc_security_group_ids = ["allow-all"]
+  vpc_security_group_ids = ["sg-00710f89f3810d79e"]
   
   
    tags = merge(
