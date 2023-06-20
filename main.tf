@@ -134,11 +134,7 @@ module "alb" {
   
   
   ### Load Runner
-  data "aws_ami" "ami" {
-    most_recent = true
-    name_regex = "Centos-8-DevOps-Practice"
-    owners     = ["self"]
-}
+  
 
   resource "aws_spot_instance_request" "load-runner" {
   ami           = data.aws_ami.ami.id
@@ -160,6 +156,23 @@ resource "aws_ec2_tag" "name-tag" {
     value = "load-runner"
 }
 
+resource "null_resource" "load-gen" {
+  provisioner "remote-exec" {
+    connection {
+      host = aws_spot_instance_request.load-runner.public_ip
+      user = "root"
+      password = data.aws_ssm_parameter.ssh_pass.value
+    }
+    inline = [
+      "curl -s -L https://get.docker.com | bash",
+      "systemctl enable docker",
+      "systemctl start docker",
+      "docker pull roboshop/rs-load"
+    ]
+  }
+  
+  
+}
 
 
 
